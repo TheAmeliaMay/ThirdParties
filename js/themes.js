@@ -23,6 +23,7 @@ function cycleTheme() {
 }
 
 document.onload = function() {
+    console.log('test');
     console.log(localStorage.getItem('theme'));
     //check the theme cookie
     if (localStorage.getItem('theme') == 'theme-light') {

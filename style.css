@@ -1,0 +1,105 @@
+* { font-family: "Times New Roman", Times, Serif; }
+
+body {
+    margin: 2% 10% 2% 10%;
+    transition: background-color 1s, color 1s;
+}
+
+a { transition: color 1s; }
+
+button {
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 20px;
+    transition: background-color 1s, border 1s;
+}
+
+#themeBtn { float: right; }
+
+#quizCntnr, #resCntnr {
+    padding: 2% 5% 2% 5%;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+#resCntnr { display: none; }
+.quizBtn { margin: 0 3% 0 3%; }
+.quizBtn:disabled { visibility: hidden; }
+
+@media only screen and (max-width: 1024px) {
+    #themeBtn {
+        width: 25%;
+        height: 50px;
+    }
+
+    #quizTitle { font-size: 22px; }
+
+    .quizBtn {
+        width: 100%;
+        height: 50px;
+        margin: 0 0 1vh 0;
+        font-size: 25px;
+    }
+}
+
+#agreeBtn {
+    background-color: #2BA84A; /*green*/
+    border-color: #248232; /*dark green*/
+}
+
+#leanAgreeBtn {
+    background-color: #7CA384; /*pale green*/
+    border-color: #5E7A62; /*pale dark green*/
+}
+
+#neutralBtn {
+    background-color: gold;
+    border-color: goldenrod;
+}
+
+#leanDisBtn {
+    background-color: #FF9999; /*pale red*/
+    border-color: #BC7171; /*pale dark red*/
+}
+
+#disBtn {
+    background-color: #FF5959; /*red*/
+    border-color: #C13E3E; /*dark red*/
+}
+
+/*DARK THEME*/
+.theme-dark {
+    background-color: #2C0E37; /*dark purple*/
+    color: #DAA89B; /*pastel pink*/
+}
+
+.theme-dark a { color: #CB429F; /*magenta*/ }
+.theme-dark a:hover { color: #690375; /*purple*/ }
+
+.theme-dark button {
+    background-color: #DAA89B; /*dark purple*/
+    color: #2C0E37; /*pastel pink*/
+    border: 3px solid #AE847E; /*light brown*/
+}
+
+.theme-dark #quizCntnr, .theme-dark #resCntnr { background-color: #480250; /*purple 2*/ }
+
+/*LIGHT THEME*/
+.theme-light {
+    background-color: plum;
+    color: #2C0E37; /*dark purple*/
+}
+
+.theme-light a { color: #690375; /*purple*/ }
+.theme-light a:hover { color: #CB429F; /*magenta*/ }
+
+.theme-light button {
+    background-color: #CB429F; /*magenta*/
+    color: #2C0E37; /*dark purple*/
+    border: 3px solid #90276F; /*dark magenta*/
+}
+
+.theme-light #quizCntnr, .theme-light #resCntnr { background-color: #DC7FBE; /*middle purple*/ }

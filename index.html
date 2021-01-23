@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Third Parties Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+    <meta name="author" content="Amelia May Johnson">
+    <meta name="description" content="Are you a Libertarian or Green, or do you agree more with the Constitution or Reform parties? Take this third party political quiz to find out!">
+    <meta name="tags" content="third 3rd minor small smaller alternative alt opposition new party parties quiz politics political usa us elect election elections electoral elected vote voting voter voters ballot ballots candidate candidates office offices">
+
+    <script type="text/javascript" src="js/themes.js"></script>
+    <script type="text/javascript" src="js/questions.js"></script>
+    <script type="text/javascript" src="js/parties.js"></script>
+    <script type="text/javascript" src="js/quiz.js"></script>
+</head>
+<body class="theme-dark">
+    <button id="themeBtn" onclick="cycleTheme()">Light Theme</button>
+
+    <h1>Third Parties Quiz</h1>
+    <p>Are you a Libertarian or Green, or do you agree more with the Constitution or Reform parties? Take this third party political quiz to find out! Your results may not be accurate, so it's best that you read the <a href="#platforms">platforms</a> yourself, if interested!</p>
+    <p>The quiz will present you with a number of statements, to which you will respond by ranking your agreement. If you're familiar with <a href="https://8values.github.io/" target="_blank">8values,</a> it's kind of like that.</p>
+
+    <div id="quizCntnr">
+        <h2 id="quizTitle">Loading...</h2>
+        <button id="backBtn" class="quizBtn" onclick="undo()">Back</button>
+        <button id="agreeBtn" class="quizBtn" onclick="answer(2)">Agree</button>
+        <button id="leanAgreeBtn" class="quizBtn" onclick="answer(1)">Lean Agree</button>
+        <button id="neutralBtn" class="quizBtn" onclick="answer(0)">Neutral</button>
+        <button id="leanDisBtn" class="quizBtn" onclick="answer(-1)">Lean Disagree</button>
+        <button id="disBtn" class="quizBtn" onclick="answer(-2)">Disagree</button>
+    </div>
+    <script>setTitle(questions[0][0])</script>
+
+    <div id="resCntnr">
+        <h2>Your results are in!</h2>
+    </div>
+
+    <h2>What are third parties?</h2>
+    <p>Third parties are minor political parties in the United States, other than the Democrats and Republicans. These parties are less corrupt, but also less successful, being at a severe disadvantage due to the first-past-the-post system, tough ballot access laws, and plenty of other restrictions.</p>
+
+    <h2>Does this website track me?</h2>
+    <p>No. This website stores no information about you or your responses. It simply uses a single cookie to determine if you want a dark or light theme. By using this website: you agree to allow me to use that cookie for the purpose stated prior.</p>
+
+    <h2 id="platforms">Party Platforms</h2>
+    <p>Here is a list of party platforms, or the closest I could find:</p>
+    <ul>
+        <li><a href="https://www.theallianceparty.com/positions">Alliance</a></li>
+        <li><a href="https://solidarity-party.org/about-us/platform/">American Solidarity</a></li>
+        <li><a href="https://www.constitutionparty.com/assets/Platform-in-Brief.pdf">Constitution</a></li>
+        <li><a href="https://www.gp.org/platform">Green</a></li>
+        <li><a href="https://www.lp.org/platform/">Libertarian</a></li>
+        <li><a href="https://www.prohibitionparty.org/platform#!">Prohibition</a></li>
+        <li><a href="https://reformparty.org/our-solutions/">Reform</a></li>
+        <li><a href="https://www.pslweb.org/about">Socialism and Liberation</a></li>
+    </ul>
+
+    <script> </script>
+</body>
+</html>

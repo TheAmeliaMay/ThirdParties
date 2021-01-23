@@ -19,12 +19,13 @@ function cycleTheme() {
     }
 
     //set a cookie to keep track
-    document.cookie = 'theme=' + body.className;
+    localStorage.setItem('theme', body.className);
 }
 
 document.onload = function() {
+    console.log(localStorage.getItem('theme'));
     //check the theme cookie
-    if (document.cookie.includes('theme=theme-light')) {
+    if (localStorage.getItem('theme') == 'theme-light') {
         setTheme('theme-light');
     } else {
         setTheme('theme-dark');

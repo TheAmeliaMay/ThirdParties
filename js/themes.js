@@ -31,4 +31,4 @@ function load() {
     }
 }
 
-document.onload = test;
+window.onload = load;

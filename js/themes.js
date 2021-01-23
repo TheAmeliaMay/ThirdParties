@@ -22,9 +22,7 @@ function cycleTheme() {
     localStorage.setItem('theme', body.className);
 }
 
-document.onload = function() {
-    console.log('test');
-    console.log(localStorage.getItem('theme'));
+function load() {
     //check the theme cookie
     if (localStorage.getItem('theme') == 'theme-light') {
         setTheme('theme-light');
@@ -32,3 +30,5 @@ document.onload = function() {
         setTheme('theme-dark');
     }
 }
+
+document.onload = test;
